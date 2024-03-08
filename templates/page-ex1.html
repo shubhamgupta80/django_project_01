@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shubh web page</title>
+    <style>
+        /* reset css */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #efefef;
+            color: white;
+        }
+
+        section {
+            height: 100vh;
+            /* 100% of the viewport height */
+        }
+
+        #s1 {
+            background-image: url('bg1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: grid;
+            place-items: center;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        #leftcol {
+
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+
+
+        .logoarea {
+            display: flex;
+            justify-content: center;
+            padding: .5rem;
+        }
+
+        #logo {
+            font-size: 2rem;
+            font-family: sans-serif;
+            font-weight: bolder;
+        }
+
+        h1 {
+            font-size: 7rem;
+            font-family: sans-serif;
+            font-weight: lighter;
+            text-align: center;
+        }
+
+        h1>span {
+            font-weight: bold;
+
+        }
+
+        .btnarea {
+            display: flex;
+            justify-content: center;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: white;
+            font-weight: 3rem;
+            padding: 1rem;
+            display: block;
+            width: 200px;
+            text-align: center;
+            border-radius: 2rem;
+        }
+
+        #s2 {
+            display: grid;
+            place-items: center;
+        }
+
+        #s2 h2 {
+            text-align: center;
+            color: #2d2df6;
+            font-size: 3.5rem;
+            font-family: sans-serif;
+
+
+        }
+
+        .container2 {
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+        }
+
+        .services {
+            display: flex;
+            gap: 75px;
+            justify-self: center;
+
+        }
+
+        .svc_card {
+            background: #2d2df6;
+            color: white;
+            border-radius: 10px;
+            padding: 2rem;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            font-family: sans-serif;
+
+
+        }
+
+
+        .svc_card>p {
+            font-size: 2rem;
+        }
+
+        .svc_card>h3 {
+            font-size: 2rem;
+        }
+
+        .svc_card>.icon {
+            display: block;
+            filter: invert(1);
+        }
+
+        #s3 {
+            /* display: flex;
+            flex-direction: column; */
+            padding: 80px;
+            background-color: white;
+        }
+
+        .container3 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .photo {
+            display: flex;
+
+            gap: 1rem;
+        }
+
+        .content {
+            justify-content: center;
+            background-color: rgb(180, 176, 176);
+            padding: 5rem;
+        }
+
+        .content>h2 {
+            font-family: sans-serif;
+            font-size: 2.5rem;
+            color: #6363db;
+
+        }
+
+        .content>p {
+            font-family: sans-serif;
+            font-size: 1.3rem;
+            padding: 30px 0px;
+            color: gray;
+        }
+
+        .photo1,
+        .photo2 {
+
+            border-radius: 8px;
+        }
+
+        .photo1 {
+            padding-bottom: 3rem;
+        }
+
+        .photo2 {
+            padding-top: 5rem;
+        }
+
+        #s4 {
+            padding: 100px;
+            /* background-image: url(backgroung1.avif); */
+            background-image: linear-gradient(to right,aqua,blue);
+            background-size: cover;
+        }
+
+
+        .para {
+            text-align: center;
+            padding-top: 200px;
+            font-family: sans-serif;
+            font-size: 3.5rem;
+            color: white;
+        }
+
+        #s5 {
+            background-color: white;
+        }
+
+        .container5 {
+            display: flex;
+            width: 100%;
+            color: black;
+            font-size: 1.5rem;
+            justify-content: space-around;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .aboutus> {
+            text-align: left;
+            font-family: sans-serif;
+            padding-top: 5rem;
+
+        }
+
+        .aboutus2 {
+            text-align: right;
+            padding-bottom: 5rem;
+
+        }
+
+        .k {
+            margin: .8rem;
+        }
+
+        .k h3 {
+            padding: .4rem;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        li a {
+            color: rgb(110, 110, 174)
+        }
+
+        h4 {
+            color: #6b5fc7;
+            padding-top: 10px;
+        }
+
+        .para-color {
+            color: white;
+        }
+        .img4{
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section id="s1">
+            <div class="container">
+                <div id="leftcol">
+                    <div class="logoarea">
+                        <img src="logo.png" alt="" height="70" width="65">
+                        <span id="logo">Company<br>Name</span>
+                    </div>
+                    <div>
+                        <h1>
+                            Changing the world<br>
+                            <span>one app at a time</span>
+                        </h1>
+                    </div>
+                    <div class="btnarea">
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+                <div id="rightcol">
+                    <img src="superheroo.png" height="650" width="400" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="s2">
+            <div class="container">
+                <div class="container2">
+                    <h2>Our Services</h2>
+                    <!-- .services -->
+                    <!-- .services>.svc_card*3>img.icon+(h3>lorem3)+(p>lorem10) -->
+                    <div class="services">
+                        <div class="svc_card">
+                            <img src="setting.jpg" alt="" class="icon" height="100" width="100">
+                            <h3>Lorem, ipsum dolor.</h3>
+                            <p class="para-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, et.
+                            </p>
+                        </div>
+                        <div class="svc_card">
+                            <img src="message.png" alt="" class="icon" height="100" width="100">
+                            <h3>Quaerat, architecto neque?</h3>
+                            <p class="para-color">Omnis quos aspernatur vel! Laborum similique asperiores impedit nisi
+                                odio!</p>
+                        </div>
+                        <div class="svc_card">
+                            <img src="storage.jpg" alt="" class="icon" height="100" width="100">
+                            <h3>Explicabo, reprehenderit soluta?</h3>
+                            <p class="para-color">Quod quasi dicta doloribus dolorem esse ipsum labore, nemo numquam!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="services"></div>
+        </section>
+        <section id="s3">
+            <!-- .container3>.content>((h2>lorem3)+(p>lorem25))+.photo -->
+            <div class="container3">
+                <div class="content">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>
+                        <b>Lorem </b>ipsum dolor sit amet consectetur adipisicing elit.
+                        Consequuntur at, mollitia voluptatum laudantium quidem labore
+                        dolor. Ratione modi placeat commodi, facere rem fugit quam sit,
+                        asperiores fuga, corporis laborum voluptatem.Eos commodi est
+                        voluptates! Enim suscipit similique, nulla quod, ut iusto, odit
+                        quasi corporis atque repudiandae odio.
+                    </p>
+                </div>
+                <div class="photo">
+                    <div class="photo1">
+                        <img class="img4" src="hero.jpg" alt="" height="400" width="250" />
+                    </div>
+                    <div class="photo2">
+                        <img class="img4" src="rockhero.jpg" alt="" height="400" width="250" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="s4">
+            <div class="container4">
+                <div>
+                    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro a fugit mollitia,
+                        unde quod
+                        nostrum veniam deleniti ab ipsam pariatur commodi suscipit, voluptatibus nisi dolores!</p>
+                </div>
+            </div>
+        </section>
+        <section id="s5">
+            <div class="container5">
+                <div class="aboutus">
+                    <h2>Connect With Us</h2>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Yahoo</a></li>
+
+                    </ul>
+
+                </div>
+                <div class="aboutus2">
+
+                    <div class="k">
+                        <h4>Mailing Address</h4>
+                        <p>shubhamguptashabu@gmail.com</p>
+                    </div>
+                    <div class="k">
+                        <h4>Email Address</h4>
+                        <p>shabugupta80@gmail.com</p>
+
+                    </div>
+                    <div class="k">
+                        <h4>Phone No.</h4>
+                        <p>8090486266</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>

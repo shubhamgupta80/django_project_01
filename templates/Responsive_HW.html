@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+  <!-- FontAwesome 6.2.0 CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- (Optional) Use CSS or JS implementation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+    integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <style>
+    .bg_photo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 600px;
+      object-fit: cover;
+      z-index: -1;
+    }
+  </style>
+
+<body>
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <!-- <i
+            ><img
+              src="http://purepng.com/public/uploads/large/purepng.com-microsoft-logo-iconlogobrand-logoiconslogos-251519939091wmudn.png"
+              alt=""
+              height="25"
+              width="25"
+          /></i> -->
+        <a class="navbar-brand" href="#">
+          <img src="microsoft.png" alt="" height="25" width="25" />
+          Microsoft</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" aria-current="page">Microsoft 365
+                <span class="visually-hidden">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">OneDrive</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Business</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdownId1" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Plans and Pricing</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="#">For home</a>
+                <a class="dropdown-item" href="#">For business</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdownId2" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Features</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="#">Action 1</a>
+                <a class="dropdown-item" href="#">Action 2</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdownId3" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Resources</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="#">Action 1</a>
+                <a class="dropdown-item" href="#">Action 2</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Download</a>
+            </li>
+          </ul>
+          <form class="d-flex my-2 my-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdownId4" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">All microsoft</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="#">Action 1</a>
+                <a class="dropdown-item" href="#">Action 2</a>
+              </div>
+            </li>
+            
+              <a  class="nav-link px-3" href="#">Search</a>
+              <i class="fas fa-search"></i>
+            
+          </form>
+          <li class="nav-item d-flex">
+            <a class="nav-link px-3" href="#">Sign in
+              <i class="fa-solid fa-user-plus fa-2x"></i>
+            </a>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <img src="background_bg.avif" alt="background-photo" class="bg_photo">
+
+    <div class="p-5 mb-4 text-dark rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">
+          Securely save and share what's <br />
+          important with Onedrive
+        </h1>
+        <p class="col-md-8 fs-10">
+          Keep your files and memories protected, up to date, and easily
+          accessible across all your devices.
+        </p>
+        <button class="btn btn-primary btn-lg" type="button">Sign in</button>
+        <button class="btn btn-primary btn-lg bg-light text-bold" type="button" style="color: blue">
+          Create free account
+        </button>
+        <br />
+        <a href="#">See Plans and Pricing ></a>
+      </div>
+     
+    </div>
+  </header>
+  <main>
+    <section class="site mt-4">
+      <div class="container col-lg-4 gap-2 d-flex flex-column align-items-center text-dark">
+        <img src="cloud.avif" alt="">
+        <h3>All your stuff safe in one place</h3>
+        <p>Start with 5 GB free cloud storage or subscribe to Microsoft 365 for peace of mind knowing you have plenty
+          of space to save hundreds of thousands of photos, videos, and files.</p>
+      </div>
+    </section>
+    <section>
+      <div class="container d-flex text-dark flex-column align-items-left">
+        <h4>OneDrive’s got your back(up)</h4>
+        <p>Back up your important files, photos, apps, and settings so they’re available no matter what happens to
+          your device. Have peace of mind knowing you can easily recover your files from accidents or corrupted files.
+        </p>
+
+        <a href="#">Learn more></a>
+        <img src="videoframe_3000.png" height="400" width="600" alt="#">
+
+      </div>
+      <div class="container d-flex text-dark flex-column align-items-left">
+        <h4>Share your memories, relive the moment</h4>
+        <p>Save and privately share photos, videos, and albums with family and friends. No matter if it’s from a year
+          or a lifetime ago, OneDrive helps you relive your favorite moments with the people that matter most.</p>
+        <a href="#">Learn more></a>
+        <img src="videoframe_4000.png" height="400" width="600" alt="#">
+      </div>
+      <div class="container d-flex text-dark flex-column align-items-left">
+        <h4>Your stuff protected, organized, and updated wherever you are</h4>
+        <p>Easily access, edit, and organize your files from all your devices, anywhere. Changes you make to your
+          files and folders are updated across devices, and you can even access them offline.</p>
+        <img src="videoframe_9000(1).png" height="400" width="600" alt="#">
+      </div>
+      <div class="container d-flex text-dark flex-column align-items-left">
+        <h4>Take your digital life wherever real life takes you</h4>
+        <p>With the OneDrive mobile app you can save, edit, and share your photos, videos, and files wherever you go.
+          You can even scan important documents and meaningful mementos to keep them protected in the cloud.</p>
+          <a href="#">Download mobile app></a>
+          <img src="videoframe_5000 (1).png" height="600" width="600" alt="#">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

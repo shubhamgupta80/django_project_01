@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Webpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 1200px;
+            margin-inline: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .boxes {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(184, 247, 247);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: 600;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        #b1 {
+            background-color: rgb(184, 247, 247);
+            transition: all 300ms ease-in-out;
+        }
+
+        #b1:hover {
+            background-color: rgb(156, 96, 96);
+            border-radius: 100%;
+            color: white;
+        }
+
+        #b3 {
+            background-color: rgb(207, 101, 101);
+            transition: 300ms ease-in-out;
+        }
+
+        #b2:hover~#b3 {
+            background-color: rgb(57, 57, 96);
+            /* transform: scale(1.2) rotate(90deg) translate(-100px, -200px); */
+            transform: scale(1.2) translate(100px, 100px);
+        }
+
+        #b4:hover {
+            background-color: rgb(196, 196, 227);
+            transform: scale(.8);
+        }
+
+        #b8:hover~#b6 {
+            transform: scale(1.2) translate(100px 100px);
+            background-color: darkcyan;
+        }
+
+        #b6 {
+            transition: 300ms ease-in-out;
+            background-color: aquamarine;
+        }
+
+        /* to and frow animation */
+        @keyframes toandfro {
+            0% {
+                transform: translateY(0);
+                background-color: rgb(229, 142, 142);
+            }
+
+            50% {
+                transform: translateY(-100px);
+                scale: .8;
+            }
+
+            100% {
+                transform: translateY(100px);
+                background-color: rgb(110, 172, 190);
+            }
+        }
+
+        /* .boxes:nth-child(6),
+        .boxes:nth-child(8),
+        .boxes:last-child {
+            animation: toandfro 300ms infinite ease-in-out alternate;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- section.container>.boxes*10>lorem1 -->
+    <section class="container">
+        <div class="boxes" id="b1">Lorem.</div>
+        <div class="boxes" id="b2">Perferendis.</div>
+        <div class="boxes" id="b3">Cumque?</div>
+        <div class="boxes" id="b4">Doloremque?</div>
+        <div class="boxes" id="b5">Dolorum!</div>
+        <div class="boxes" id="b6">Quidem?</div>
+        <div class="boxes" id="b7">Labore.</div>
+        <div class="boxes" id="b8">Minima?</div>
+        <div class="boxes">Quos?</div>
+        <div class="boxes">Temporibus!</div>
+    </section>
+</body>
+
+</html>
